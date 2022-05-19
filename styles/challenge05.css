@@ -1,0 +1,20 @@
+body {
+    background-color: #737373;
+}
+
+header img {
+    width: 100%;
+}
+
+.info {
+    align-items: center;
+}
+
+.info img {
+    display: inline-block;
+    width: 15rem;
+    border-radius: 50%;
+    border: #343535 solid 10px;
+    margin-left: 10%;
+    margin-top: 40px;
+}
