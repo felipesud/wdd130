@@ -225,6 +225,54 @@ h4 {
 
 }
 
+/* RIVERS PAGE */
+.rivers-h1 {
+    text-align: center;
+    color: #1A4565;
+}
+
+.rivers-strong {
+    text-align: center;
+}
+
+.rivers-section {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.rivers-section-h1{
+    text-align: center;
+    grid-column: 1/6;
+    grid-row: 1;
+}
+
+.rivers-img1 {
+    grid-column: 1/2;
+    grid-row: 2;
+    width: 60px;
+}
+.rivers-img2 {
+    grid-column: 3/4;
+    grid-row: 2;
+    width: 60px;
+}
+.rivers-img3 {
+    grid-column: 5/6;
+    grid-row: 2;
+    width: 60px;
+}
+.rivers-img4 {
+    grid-column: 7/8;
+    grid-row: 2;
+    width: 60px;
+}
+.rivers-img5 {
+    grid-column: 9/10;
+    grid-row: 2;
+    width: 60px;
+}
+/* RIVERS PAGE */
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
