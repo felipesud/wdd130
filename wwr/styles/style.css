@@ -237,39 +237,96 @@ h4 {
 
 .rivers-section {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(6, 300px) ;
+    grid-template-rows: 100px 300px 300px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 .rivers-section-h1{
     text-align: center;
-    grid-column: 1/6;
-    grid-row: 1;
+    grid-column: 1/5;
+    grid-row: 1/1;
+}
+
+
+.rivers-img1:hover, 
+.rivers-img2:hover, 
+.rivers-img3:hover, 
+.rivers-img4:hover, 
+.rivers-img5:hover, 
+.rivers-img6:hover, 
+.rivers-img7:hover, 
+.rivers-img8:hover   {
+    opacity: .8;
+    transform: scale(1.1);
 }
 
 .rivers-img1 {
+    border: 10px solid #1A4565;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
     grid-column: 1/2;
-    grid-row: 2;
-    width: 60px;
+    grid-row: 2/2;
+   
 }
 .rivers-img2 {
-    grid-column: 3/4;
-    grid-row: 2;
-    width: 60px;
+    border: 10px solid #1A4565;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 2/3;
+    grid-row: 2/2;
+   
 }
 .rivers-img3 {
-    grid-column: 5/6;
-    grid-row: 2;
-    width: 60px;
+    border: 10px solid #1A4565;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 3/4;
+    grid-row: 2/2;
+   
 }
 .rivers-img4 {
-    grid-column: 7/8;
-    grid-row: 2;
-    width: 60px;
+    border: 10px solid #1A4565;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 4/5;
+    grid-row: 2/2;
+   
 }
 .rivers-img5 {
-    grid-column: 9/10;
-    grid-row: 2;
-    width: 60px;
+    border: 10px solid #1A4565;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 1/2;
+    grid-row: 3;
+   
+}
+.rivers-img6 {
+    border: 10px solid #1A4565;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 2/3;
+    grid-row: 3;
+   
+}
+.rivers-img7 {
+    border: 10px solid #1A4565;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 3/4;
+    grid-row: 3;
+   
+}
+.rivers-img8 {
+    border: 10px solid #1A4565;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 4/5;
+    grid-row: 3;
+   
 }
 /* RIVERS PAGE */
 
@@ -298,7 +355,9 @@ h4 {
         font-size: 25px;
         color: #6f7364;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+    .rivers-card, 
+    .camping-card, 
+    .rapids-card  { 
         margin: 50px auto;
         width: 60%;
     }
@@ -310,6 +369,54 @@ h4 {
         display: block;
         margin: 0 auto;
     }
+    .rivers-img1, 
+    .rivers-img2, 
+    .rivers-img3, 
+    .rivers-img4, 
+    .rivers-img5, 
+    .rivers-img6, 
+    .rivers-img7, 
+    .rivers-img8{
+        margin: 50px auto;
+        width: 80%;
+        grid-column: 1;
+        
+    }
+    .rivers-img1{
+        grid-row: 2;
+    }.rivers-img2{
+        grid-row: 3;
+    }.rivers-img3{
+        grid-row: 4;
+    }.rivers-img4{
+        grid-row: 5;
+    }.rivers-img5{
+        grid-row: 6;
+    }.rivers-img6{
+        grid-row: 7;
+    }.rivers-img7{
+        grid-row: 8;
+    }.rivers-img8{
+        grid-row: 9;
+    }
+
+    .rivers-section {
+        display: grid;
+        grid-template-columns: 300px ;
+        grid-template-rows: 100px 300px 300px 300px 300px 300px 300px 300px 300px;
+        grid-row-gap: 10px;
+        justify-items: stretch;
+        align-items: stretch;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .rivers-section-h1{
+        text-align: center;
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    
     footer {
         margin-top: 25px;
     }
