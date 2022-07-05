@@ -1,0 +1,48 @@
+@import 'reset.css';
+
+body header {
+    display:grid;
+    background-color: var(--primary-color);
+    height: 200px;
+    grid-template-columns: 150px auto;
+    font-family: var(--heading-font);
+
+}
+
+body header .logo img{
+    -ms-flex-align: start ;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 25vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+body header nav a {
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-link-color);
+    padding: 35px;
+}
+
+body header .nav:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+body header a {
+    padding:2em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 30px;
+  
+  }
+
+.logo {
+    margin: 0px;
+    padding: 0px;
+}
