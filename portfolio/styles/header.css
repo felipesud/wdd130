@@ -10,7 +10,7 @@ body header {
 }
 
 body header .logo img{
-    -ms-flex-align: start ;
+   
     background-repeat: no-repeat;
     border-radius: 50%;
     width: 25vh;

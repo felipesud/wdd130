@@ -24,12 +24,12 @@
   }
 
   p {
-    font: var(--paragraph-font);
+    font-family: "Roboto";
     font-size: 30px;
   }
 
   a {
-    font: var(--paragraph-font);
+    font-family:"Roboto";
     font-size: 25px;
   }
 

@@ -27,7 +27,7 @@ body section h1 {
 
 body main{
     grid-row: 3 / 4;
-    font-family: var(--paragraph-font);
+    font-family:"Roboto";
     
     
     
