@@ -1,0 +1,52 @@
+@import 'header.css';
+@import 'footer.css';
+
+body {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 200px 1fr 1fr 200px;
+    
+    background-color: var(--accent2-color);
+}
+body section{
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../images/bg-home.jpg") ;
+    font: var(--heading-font);
+    background-size: cover;
+    height: 800px;
+    color: var(--headline-color-on-color);
+    
+    grid-row: 2;
+    
+    
+}
+
+body section h1 {
+    font-size: 100px;
+    color: var(--headline-color-on-color);
+}
+
+body main{
+    grid-row: 3 / 4;
+    font-family: var(--paragraph-font);
+    
+    
+    
+}
+
+body main img {
+    width: 300px;
+    border-radius: 70%;
+    border: solid;
+    border-color: var(--headline-color-on-white);
+    display: block;
+    margin: 0 auto;
+    
+}
+
+body main p {
+    
+    color: var(--headline-color-on-white);
+    text-align: center;
+    
+    
+}
