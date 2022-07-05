@@ -10,7 +10,7 @@ body {
 }
 body section{
     background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../images/bg-home.jpg") ;
-    font: "Quicksand";
+    font-family: "Quicksand";
     background-size: cover;
     height: 800px;
     color: var(--headline-color-on-color);
