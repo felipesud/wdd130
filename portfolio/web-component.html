@@ -9,31 +9,162 @@
 <div id="navbar">
   <a href="#default" id="logo">Brazil Temples</a>
   <div id="navbar-right">
-    <a class="active" href="#home">Home</a>
+    <a class="active" href="web-component.html">Home</a>
     <a href="#photos">Photos</a>
-    <a href="#timeline">Dedication</a>
+    <a href="#timeline">Timeline</a>
     <a href="#about">About</a>
   </div>
 </div>
 
 <div style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
-  <p><b>This example demonstrates how to shrink a navigation bar when the user starts to scroll the page.</b></p>
-  <p>Scroll down this frame to see the effect!</p>
-  <p>Scroll to the top to remove the effect.</p>
-  <p><b>Note:</b> We have also made the navbar responsive, resize the browser window to see the effect.</p>
-  <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2 style="text-align:center">Currently Dedicated Temples in Brazil</h2>
+
+    <div id="photos" class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 8</div>
+        <img src="https://assets.ldscdn.org/33/cb/33cb73d045a401cfc3d837910eac29ab672ae74c/campinas_brazil_temple_lds.jpeg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 8</div>
+        <img src="https://assets.ldscdn.org/72/b6/72b681f306c6854de506d5d31374e79545bc7f2a/curitiba_brazil_temple.jpeg" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 8</div>
+        <img src="https://assets.ldscdn.org/50/f4/50f4668ebc645fe303006ab16439f3a57304fd571076895/e2a28dbb2b14f5f71d79b359cf9f7b88dc480144.jpeg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 8</div>
+        <img src="https://assets.ldscdn.org/5a/83/5a83f59f56ac913a98953e80a18d61f6cf9eae40/manaus_brazil_temple_lds.png" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 8</div>
+        <img src="https://assets.ldscdn.org/59/fe/59fed184fdecc9e423bf636cfded773d70667d5a/porto_alegre_brazil_temple_lds.jpeg" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 8</div>
+        <img src="https://assets.ldscdn.org/83/e0/83e0f3f9eca4b20cb12370370db04c7af77808e5/recife_brazil_temple_lds.jpeg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">7 / 8</div>
+        <img src="https://assets.ldscdn.org/df/35/df35e1b67304f9c2d9573540c5cd7f8d84001269/rio_de_janeiro_brazil_temple.jpeg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">8 / 8</div>
+        <img src="https://assets.ldscdn.org/9e/49/9e49d0f341d5afcd33165fb4bcd2c13158dd23b7/sao_paulo_brazil_temple_lds.jpeg" style="width:100%">
+      </div>
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="https://assets.ldscdn.org/33/cb/33cb73d045a401cfc3d837910eac29ab672ae74c/campinas_brazil_temple_lds.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Campinas Brazil Temple">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://assets.ldscdn.org/72/b6/72b681f306c6854de506d5d31374e79545bc7f2a/curitiba_brazil_temple.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Curitiba Brazil Temple">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://assets.ldscdn.org/50/f4/50f4668ebc645fe303006ab16439f3a57304fd571076895/e2a28dbb2b14f5f71d79b359cf9f7b88dc480144.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Fortaleza Brazil Temple">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://assets.ldscdn.org/5a/83/5a83f59f56ac913a98953e80a18d61f6cf9eae40/manaus_brazil_temple_lds.png" style="width:100%" onclick="currentSlide(4)" alt="Manaus Brazil Temple">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://assets.ldscdn.org/59/fe/59fed184fdecc9e423bf636cfded773d70667d5a/porto_alegre_brazil_temple_lds.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Porto Alegre Brazil Temple">
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="https://assets.ldscdn.org/83/e0/83e0f3f9eca4b20cb12370370db04c7af77808e5/recife_brazil_temple_lds.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Recife Brazil Temple">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://assets.ldscdn.org/df/35/df35e1b67304f9c2d9573540c5cd7f8d84001269/rio_de_janeiro_brazil_temple.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Rio de Janeiro Brazil Temple">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="https://assets.ldscdn.org/9e/49/9e49d0f341d5afcd33165fb4bcd2c13158dd23b7/sao_paulo_brazil_temple_lds.jpeg" style="width:100%" onclick="currentSlide(2)" alt="São Paulo Brazil Temple">
+        </div>
+      </div>
+    </div>
+
+<h1 id="timeline">Temple's Dedication Timeline</h1>
+<div class="timeline">
+  
+  <div class="container2 right">
+    <div class="content">
+      <h2>2022</h2>
+      <p>May 8th, Rio de Janeiro Brazil Temple was dedicated.</p>
+    </div>
+  </div>
+  <div class="container2 left">
+    <div class="content">
+      <h2>2019</h2>
+      <p>June 19th, Fortaleza Brazil Temple was dedicated.</p>
+    </div>
+  </div>
+  <div class="container2 right">
+    <div class="content">
+      <h2>2012</h2>
+      <p>June 10th, Manaus Brazil Temple was dedicated.</p>
+    </div>
+  </div>
+  <div class="container2 left">
+    <div class="content">
+      <h2>2008</h2>
+      <p>June 1st, Curitiba Brazil Temple was dedicated.</p>
+    </div>
+  </div>
+  <div class="container2 right">
+    <div class="content">
+      <h2>2002</h2>
+      <p>May 17th, Campinas Brazil Temple was dedicated.</p>
+    </div>
+  </div>
+  <div class="container2 left">
+    <div class="content">
+      <h2>2000</h2>
+      <p>December 15th, Recife Brazil Temple was dedicated.</p>
+      <p>December 17th, Porto Alegre Brazil Temple was dedicated.</p>
+    </div>
+  </div>
+  <div class="container2 right">
+    <div class="content">
+      <h2>1978</h2>
+      <p>October 30th, São Paulo Brazil Temple was dedicated. (The first Temple in South America)  </p>
+    </div>
+  </div>
 </div>
+<p id="about">BYU Idaho's Web Fundamentals course.</p>
+<p>Activity about 'How To' option from W3Schools </p>
+<p> 
+<h2>Who made?</h2>
 
+<div class="card">
+  <img src="https://media-exp1.licdn.com/dms/image/C5603AQHg9ncgd3lX7Q/profile-displayphoto-shrink_800_800/0/1521929591138?e=1662595200&v=beta&t=T05XRYqGhaVJusXaj89Oky58oK0sHegO-mRaR8ZKAps" alt="Avatar" style="width:100%">
+  <div class="container3">
+    <h4><b>Felipe Belisário</b></h4> 
+    <p>Web Developer</p> 
+  </div>
+</div>
 <script src="scripts/web-component.js"></script>
-
+</div>
 </body>
 </html>
 
 <!--Activities
 1- How TO - Shrink Navigation Menu on Scroll (https://www.w3schools.com/howto/howto_js_navbar_shrink_scroll.asp)
 
-2- 
+2- How TO - Slideshow Gallery (https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp)
 
+3- How TO - Timeline (https://www.w3schools.com/howto/howto_css_timeline.asp)
 
 
 
