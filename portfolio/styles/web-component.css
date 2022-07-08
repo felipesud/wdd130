@@ -10,7 +10,7 @@ body {
 
 #navbar {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #DCD7E2;
   padding: 90px 10px;
   transition: 0.4s;
   position: fixed;
@@ -37,12 +37,12 @@ body {
 }
 
 #navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #051c34;
+  color: white;
 }
 
 #navbar a.active {
-  background-color: dodgerblue;
+  background-color: #051c34;
   color: white;
 }
 
