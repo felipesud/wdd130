@@ -2,7 +2,7 @@
 @import 'footer.css';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Roboto:ital,wght@0,400;1,100&display=swap');
 
-body section img{
+body .section{
    
     /* background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../images/services.jpg") ; */
     font-family: "Quicksand";
