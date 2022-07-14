@@ -1,12 +1,13 @@
-@import 'header.css';
-@import 'footer.css';
+
+@import 'reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Roboto:ital,wght@0,400;1,100&display=swap');
+
 
 body {
     display: grid;
     grid-template-columns: 1fr; 
-    grid-template-rows: 200px 1fr 1fr 200px;
-    
+    grid-template-rows: 200px 800px 200px;
+   
     background-color: var(--accent2-color);
 }
 body section{
@@ -23,12 +24,13 @@ body section{
 
 body section h1 {
     font-size: 100px;
-    color: var(--headline-color-on-color);
+    color: white;
 }
 
 body main{
-    grid-row: 3 / 4;
+    grid-row: 3;
     font-family:"Roboto";
+    margin-top: 0;
     
     
     
@@ -54,200 +56,104 @@ body main p {
 
 
 
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
 
-body {
-  background: #dce1df;
-  color: #4f585e;
-  font-family: 'Roboto', sans-serif;
-  text-rendering: optimizeLegibility;
+
+
+/* .banner {
+  background: #051c34 ;
+  background: -webkit-linear-gradient(to right, #051c34 , #0f3f72 , #45597C);
+  background: linear-gradient(to right, #051c34, #0f3f72, #45597C);
+} */
+* {
+  font-family: "Quicksand";
 }
 
-a.btn {
-  background: #0096a0;
-  border-radius: 4px;
-	box-shadow: 0 2px 0px 0 rgba(0,0,0,0.25);
-  color: #ffffff;
-  display: inline-block;
-  padding: 6px 30px 8px;
-  position: relative;
-  text-decoration: none;
-	transition: all 0.1s 0s ease-out;
+body header {
+  display:grid;
+  background-color: var(--primary-color);
+  height: 200px;
+  grid-template-columns: 150px auto;
+  font-family: var(--heading-font);
+
 }
 
-.no-touch a.btn:hover {
-  background: lighten(#0096a0,2.5);
-  box-shadow: 0px 8px 2px 0 rgba(0, 0, 0, 0.075);
-  transform: translateY(-2px);
-  transition: all 0.25s 0s ease-out;
+body header .logo img{
+ 
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 25vh;
 }
 
-.no-touch a.btn:active,
-a.btn:active {
-  background: darken(#0096a0,2.5);
-  box-shadow: 0 1px 0px 0 rgba(255,255,255,0.25);
-  transform: translate3d(0,1px,0);
-  transition: all 0.025s 0s ease-out;
+nav {
+  display: flex;
+  justify-content: space-around;
 }
 
-div.cards {
-  margin: 80px auto;
-  max-width: 960px;
+body header nav a {
+  align-self: center;
   text-align: center;
+  text-decoration: none;
+  color: var(--nav-link-color);
+  padding: 35px;
 }
 
-div.card {
-  background: #ffffff;
-  display: inline-block;
-  margin: 8px;
-  max-width: 300px;
-  perspective: 1000;
-  position: relative;
-  text-align: left;
-  transition: all 0.3s 0s ease-in;
-  width: 300px;
-  z-index: 1;
+body header .navi:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  text-decoration: none;
 }
 
-img {
-    max-width: 300px;
-  }
-  
-  .card__image-holder {
-    background: rgba(0,0,0,0.1);
-    height: 0;
-    padding-bottom: 75%;
-  }
+body header a {
+  padding:2em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 30px;
 
-  div.card-title {
-    background: #ffffff;
-    padding: 6px 15px 10px;
-    position: relative;
-    z-index: 0;
-  }
-    a.toggle-info {
-      border-radius: 32px;
-      height: 32px;
-      padding: 0;
-      position: absolute;
-      right: 15px;
-      top: 10px;
-      width: 32px;
-    }
-      span {
-        background: #ffffff;
-        display: block;
-        height: 2px;
-        position: absolute;
-        top: 16px;
-        transition: all 0.15s 0s ease-out;
-        width: 12px;
-      }
-      
-      span.left {
-        right: 14px;
-        transform: rotate(45deg);
-      }
-      span.right {
-        left: 14px;
-        transform: rotate(-45deg);
-      }
-    
-    
-    h2 {
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: -0.05em;
-      margin: 0;
-      padding: 0;
-    }
-      small {
-        display: block;
-        font-size: 18px;
-        font-weight: 600;
-        letter-spacing: -0.025em;
-      }
-    
-
-  div.card-description {
-    padding: 0 15px 10px;
-    position: relative;
-    font-size: 14px;
-  }
-
-  div.card-actions {
-  	box-shadow: 0 2px 0px 0 rgba(0,0,0,0.075);
-    padding: 10px 15px 20px;
-    text-align: center;
-  }
-  
-  div.card-flap {
-    background: darken(#ffffff,15);
-    position: absolute;
-    width: 100%;
-    transform-origin: top;
-    transform: rotateX(-90deg);
-  }
-  div.flap1 {
-    transition: all 0.3s 0.3s ease-out;
-    z-index: -1;
-  }
-  div.flap2 {
-    transition: all 0.3s 0s ease-out;
-    z-index: -2;
-  }
-  
-
-
-div.cards.showing div.card {
-  
-    cursor: pointer;
-    opacity: 0.6;
-    transform: scale(0.88);
-  }
-
-
-.no-touch  div.cards.showing div.card:hover{
-   
-    opacity: 0.94;
-    transform: scale(0.92);
-  }
-
-
-div.card.show {
-  opacity: 1 !important;
-  transform: scale(1) !important;
-}
-  div.card-title a.toggle-info{
-    
-      background: #ff6666 !important;
-  }
-      div.card-title a.toggle-info span {
-        top: 15px;
-      }
-      span.left {
-        right: 10px;
-      }
-      span.right {
-        left: 10px;
-      }
-    
-  
-  div.card-flap {
-    background: #ffffff;
-    transform: rotateX(0deg);
-  }
-  div.flap1 {
-    transition: all 0.3s 0s ease-out;
-  }
-  div.flap2 {
-    transition: all 0.3s 0.2s ease-out;
-  }
-
-
-
-#burger {
-  margin-top: 100px;
-  margin-left: 50px;
-  background-color: white;
 }
 
+.logo {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+footer{
+  
+  background-color: var(--nav-background-color); 
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h3{
+  color: var(--accent2-color);
+
+}
+
+footer a {
+  color: var(--accent2-color);
+  text-decoration: none;
+}
+
+footer h3 a:hover {
+  background-color: var(--accent1-color);
+  color: var(--nav-background-color);
+  text-decoration: none;
+}
+
+footer .social img {
+  padding-top: 15px;
+}
+
+.social i:hover {
+  color: var(--accent1-color);
+}

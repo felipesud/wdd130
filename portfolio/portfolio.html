@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Felipe Belisário | Web Developer</title>
     <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/54892b812d.js" crossorigin="anonymous"></script>
     <script src="scripts/scripts.js"></script>
 </head>
@@ -15,18 +16,18 @@
         <div class="logo">
           <a href="index.html" id="logo">  <img class="logo" src="./images/FelipeB.png" alt="Felipe logo" > </a>
         </div>
-        <nav id="navbar-right">
-        <a href="index.html" class="nav">Home</a>
-        <a href="services.html" class="nav">Services</a>
-        <a href="portfolio.html" class="nav">Portfolio</a>
-        <a href="http://blog.fsbelisario.com.br/" target="_blank" class="nav">Blog</a>
+        <nav class="nav col-12 col-md-auto mb-2 justify-content-md-around mb-md-0" id="navbar-right">
+        <a href="index.html" class="navi">Home</a>
+        <a href="services.html" class="navi">Services</a>
+        <a href="portfolio.html" class="navi">Portfolio</a>
+        <a href="http://blog.fsbelisario.com.br/" target="_blank" class="navi">Blog</a>
     </nav>
         
     </header>
     <!--header-->
     <!--section-->
     <section>
-    <!-- <img class="section" src="images/js.jpg" alt="Services"> -->
+    
     <h1><br>What I've done? <br>
     See my own projects <br>below</h1>  
 </section> 
@@ -34,34 +35,21 @@
     <!--section-->
     
     <!--main-->
-    <main>
-       <h2>My Recent Work</h2>
-       <p>Here are a few projects I've worked on recently. Want to see more? <a href="mailto:felipe@fsbelisario.com.br">Email me.</a> </p>
- 
-       <!-- CARDS-->     
-
-
-
-  <!-- Reference:
-https://codepen.io/candroo/pen/wKEwRL 
-
-Alternative: https://codepen.io/piupiupiu/pen/YyxWpd-->
+   
 
 
 
 
-<div class="container-fluid">
+<main class="container-fluid">
   <div class="px-lg-5">
 
-    <!-- For demo purpose -->
+   
     <div class="row py-5">
       <div class="col-lg-12 mx-auto">
         <div class="text-white p-5 shadow-sm rounded banner">
-          <h1 class="display-4">Bootstrap 4 photo gallery</h1>
-          <p class="lead">Bootstrap photogallery snippet.</p>
-          <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets" class="text-reset">
-              Bootstrapious</a>, Images by <a href="https://unsplash.com" class="text-reset">Unsplash</a>.
-          </p>
+          <h2 class="display-4 text-center">My Recent Work</h2>
+          <p class="lead">Here are a few projects I've worked on recently. Want to see more? <a href="mailto:felipe@fsbelisario.com.br">Email me.</a> </p>
+          
         </div>
       </div>
     </div>
@@ -257,20 +245,22 @@ Alternative: https://codepen.io/piupiupiu/pen/YyxWpd-->
 
 
   <!-- CARDS-->     
-           
-    </main>
-    <!--main-->
-    <!--footer-->
-   <footer>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
     <h3>2022 - Felipe Belisario</h3>
-    <h3><a href="https://felipesud.github.io/wdd130/portfolio/site-plan.html" target="_blank" rel="noopener noreferrer"> Site Plan</a></h3>
+  </div>
+  <h3><a href="https://felipesud.github.io/wdd130/portfolio/site-plan.html" target="_blank" rel="noopener noreferrer"> Site Plan</a></h3>
     <div class="social">
         <a href="https://www.facebook.com/felipesud/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
         <a href="https://www.linkedin.com/in/felipe-belisario/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         <a href="mailto:felipe@fsbelisario.com.br" target="_blank"><i class="fa-solid fa-at"></i></a>
         <a href="https://github.com/felipesud" target="_blank"><i class="fa-brands fa-github"></i></a>
     </div>
-</footer>
+</footer>  
+    </main>
+    <!--main-->
+    <!--footer-->
+  
 <!--footer-->
 
 </body>
